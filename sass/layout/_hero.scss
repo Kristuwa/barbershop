@@ -63,7 +63,7 @@
 		 rgba(25, 28, 38, 0.2),
 		 rgba(25, 28, 38, 0.2)
 	  ),
-	  url(../img/hero-bg-mob.jpeg);
+	  url(../img/hero-bg-mob.jpg);
  
 	background-repeat: no-repeat;
 	background-position: center;
@@ -76,7 +76,7 @@
 			rgba(25, 28, 38, 0.2),
 			rgba(25, 28, 38, 0.2)
 		 ),
-		 url(../img/hero-bg-mob-2x.jpeg);
+		 url(../img/hero-bg-mob@2x.jpg);
 	}
 	@include tablet {
 	  padding: 280px 70px 234px;
@@ -84,13 +84,13 @@
 			rgba(25, 28, 38, 0.2),
 			rgba(25, 28, 38, 0.2)
 		 ),
-		 url(../img/hero-bg-tab.jpeg);
+		 url(../img/hero-bg-tablet.jpg);
 	  @include retina {
 		 background-image: linear-gradient(
 			  rgba(25, 28, 38, 0.2),
 			  rgba(25, 28, 38, 0.2)
 			),
-			url(../img/hero-bg-tab-2x.jpeg);
+			url(../img/hero-bg-tablet@2x.jpg);
 	  }
 	}
 	@include desktop {

@@ -28,7 +28,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="logo header__logo animate__animated animate__bounce" href="">
+        <a class="logo header__logo animate__animated animate__bounce" href="#">
           <svg class="logo__icon" width="66" height="55">
             <use href="./img/symbol-defs.svg#icon-logo"></use>
           </svg>
@@ -36,7 +36,7 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a href="https://www.google.com/" class="current nav__link link"
+              <a href="#about" class="current nav__link link"
                 >О нас</a
               >
             </li>
@@ -48,29 +48,35 @@
             </li>
             <li class="nav__item">
               <a href="https://www.google.com/" class="nav__link link"
-                >Контакты</a
-              >
+                >Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="connect">
-          <a class="connect__tel link" href="tel:+380441111111"
+          <a class="connect__tel connect__tel--tablet link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
           <button type="button" class="connect__btn btn" data-modal-open>
             онлайн-запись
           </button>
         </div>
-        <button type="button" class="menu-open-btn">O</button>
+        <button type="button" class="menu-open-btn" aria-label="Кнопка открытия меню">
+			<svg class="menu-open-btn__icon" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-mob-menu"></use>
+          </svg>
+		  </button>
       </div>
       <div class="mob-menu is-hidden">
-        <div class="container">
+        
           <div class="mob-menu-top">
-            <button type="button" class="menu-close-btn">x</button>
+            <button type="button" class="menu-close-btn" aria-label="Кнопка закрытия меню">
+					<svg class="menu-close-btn__icon" width="40" height="40">
+					<use href="./img/symbol-defs.svg#icon-close"></use>
+				 </svg></button>
             <ul class="mob-menu-list list">
               <li class="mob-menu-item">
                 <a
-                  href="https://www.google.com/"
+                  href="#about"
                   class="current mob-menu-link link"
                   >О нас</a
                 >
@@ -87,7 +93,7 @@
                 >
               </li>
             </ul>
-          </div>
+  
           <div class="mob-menu-bottom">
             <div class="mob-connect">
               <a class="mob-connect-tel link" href="tel:+380441111111"
@@ -166,7 +172,7 @@
         </div>
       </section>
 
-      <!-- <section class="about">
+      <!-- <section id="about" class="about">
         <div class="container">
           <ul class="pic-list list">
             <li class="pic-list__item">
@@ -291,7 +297,7 @@
             прочувствовать, чем 10 раз прочитать.
           </p>
         </div>
-      </section> -->
+      </section> 
       <section id="masters" class="masters">
         <div class="container">
           <p class="masters__top-text top-text top-text--dark">
@@ -431,7 +437,7 @@
           </ul>
         </div>
       </section>
-      <!-- <div class="contact-wrap">
+  <div class="contact-wrap">
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Онлайн-запись</h2>

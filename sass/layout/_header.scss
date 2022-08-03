@@ -9,15 +9,30 @@
  }
  
  .header__logo {
-	margin-right: 70px;
+	margin-right: 60px;
+
+	@include desktop {
+		margin-right: 70px;
+	 }
+	
  }
  
  .nav {
 	display: none;
+
+	@include tablet {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
  }
  
  .logo__icon {
 	fill: #ffffff;
+
+	@include tablet {
+		fill: var(--second-btn-color);
+	}
  }
  
  .nav__list {
@@ -25,7 +40,15 @@
  }
  
  .nav__item:not(:last-child) {
-	margin-right: 40px;
+
+	@include tablet {
+		margin-right: 24px;
+	}
+
+	@include desktop {
+		margin-right: 40px;
+	}
+
  }
  
  .nav__link,
@@ -37,13 +60,14 @@
 	color: #ffffff;
 	transition: color 300ms ease;
 	position: relative;
+
 	&:hover,
 	&:focus {
 	  color: var(--accent-color);
 	}
  }
  
- .nav__link.current:after {
+ /*.nav__link.current:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -52,45 +76,79 @@
 	border-radius: 3px;
 	left: 0;
 	bottom: -48px;
- }
+ }*/
  
  .connect {
 	display: none;
 	margin-left: auto;
+
+	@include tablet {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+
+	}
  }
  
+
+ .connect__tel--tablet {
+
+	@include tablet {
+		margin-left: 30px;
+	}
+ }
  .connect__btn {
 	color: var(--main-btn-color);
 	margin-left: 40px;
+
+	@include tablet {
+		margin-bottom: 20px;
+	}
  }
  
  .menu-open-btn,
  .menu-close-btn {
+	background-color: transparent;
+	border: transparent;
 	display: block;
 	margin-left: auto;
+
+	@include tablet {
+		display: none;
+	}
  }
  
  .menu-close-btn {
-	margin-bottom: 30px;
+	position: absolute;
+	top: 48px;
+	right: 31px;
+
  }
  
  .mob-menu {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 1;
 	background-color: #ffffff;
-	width: 100vw;
+	width: 320px;
 	height: 100vh;
-	padding-top: 48px;
+	padding-top: 118px;
 	padding-bottom: 48px;
-	.container {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
-	  height: 100%;
-	  overflow-y: auto;
+	padding-left: 61px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow-y: auto;
+
+	@media screen and (min-width: 400px) {
+		width: 359px;
 	}
+
+	@include tablet {
+		display: none;
+	}
+
  }
  
  .mob-menu-list {
@@ -113,6 +171,7 @@
  .mob-connect {
 	margin-bottom: 64px;
  }
+
  .mob-connect-tel {
 	font-weight: 600;
 	font-size: 18px;
@@ -121,6 +180,7 @@
 	text-transform: uppercase;
 	color: #303030;
  }
+
  .mob-connect-btn {
 	display: block;
 	color: var(--second-btn-color);
@@ -141,6 +201,7 @@
 	height: 1px;
 	background-color: #303030;
  }
+
  .mob-soc-item:not(:last-child) {
 	margin-bottom: 24px;
  }
@@ -152,3 +213,8 @@
  
 	color: #303030;
  }
+
+.current {
+	color: var(--accent-color);
+}
+
