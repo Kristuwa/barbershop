@@ -1,5 +1,5 @@
 .top-text {
-	@include font(11px, 600, 1.91, 0.1em);
+	@include font(11px, 600, 1.36, 0.1em);
 	text-transform: uppercase;
 	@media screen and (min-width: 768px) {
 	  @include font(null, null, 1.36, null);

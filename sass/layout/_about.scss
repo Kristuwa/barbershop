@@ -1,18 +1,71 @@
 .about {
-	padding-top: 169px;
-	padding-bottom: 121px;
+
+	padding: 84px 0;
+
 	.container {
-	  display: flex;
+
+		@media screen and (min-width: 320px) and (max-width: 767px) {
+			min-width: 320px;
+			padding-left: 31px;
+			padding-right: 31px;
+		}
+		
+	 }
+
+	@include tablet {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		.container {
+		  display: flex;
+		}
 	}
- }
+
+	@include desktop {
+		padding-top: 169px;
+		padding-bottom: 121px;
+ }}
  
  .pic-list {
-	display: flex;
-	margin-right: 64px;
+display: none;
+
+	@include tablet {
+		width: 100%;
+		display: block;
+		margin-right: 30px;
+		
+	}
+
+	@include desktop {
+		display: flex;
+		margin-right: 64px;
+	}
+	
  }
  
+ .pic-list__item {
+
+	@include tablet{
+		width: 330px;
+		height: 235px;
+	}
+
+	@include desktop{
+		width: 270px;
+		height: 430px;
+	}
+ }
+
  .pic-list__item + .pic-list__item {
-	margin-left: 30px;
+
+	@media screen and (max-width: 1199px) {
+		margin-top: 30px;
+	}
+	
+	@include desktop {
+		margin-left: 30px;
+	}
+	
  }
  
  // .pic-list__item {
@@ -25,7 +78,15 @@
 	margin-bottom: var(--typical-margin);
  }
  .about-content__title {
+	font-size: 28px;
+	line-height: 1.18;
 	margin-bottom: var(--typical-margin);
+
+	@include desktop {
+		font-size: 42px;
+		line-height: 1.17;
+	}
+	
  }
  
  .about-content__bottom-text {
@@ -38,6 +99,10 @@
 	letter-spacing: 0.02em;
 	color: #555555;
 	margin-bottom: 40px;
+
+	@include desktop {
+		padding-right: 20px;
+	}
  }
  
  .about-content__btn {

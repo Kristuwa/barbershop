@@ -29,6 +29,7 @@
 	width: 90px;
 	display: none;
 	align-items: flex-end;
+	padding-left: 20px;
 	// padding-left: 24px;
 	// margin-bottom: 40px;
 	@include tablet {
@@ -38,7 +39,7 @@
  
  .soc__list {
 	@include tablet {
-	  transform: rotate(-90deg) translate(-19px);
+	  transform: rotate(-90deg) translate(20px);
 	  transform-origin: top left;
 	  display: flex;
 	  align-items: center;
@@ -99,19 +100,24 @@
 			rgba(25, 28, 38, 0.2),
 			rgba(25, 28, 38, 0.2)
 		 ),
-		 url(../img/hero-bg.jpeg);
+		 url(../img/hero-bg-desk.jpg);
 	  @include retina {
 		 background-image: linear-gradient(
 			  rgba(25, 28, 38, 0.2),
 			  rgba(25, 28, 38, 0.2)
 			),
-			url(../img/hero-bg-2x.jpeg);
+			url(../img/hero-bg-desk@2x.jpg);
 	  }
 	}
  }
  
  .hero-content__top-text {
-	margin-bottom: var(--typical-margin);
+	margin-bottom: 5px;
+
+	@include desktop {
+		margin-bottom: var(--typical-margin);
+	}
+	
  }
  .hero-content__title {
 	font-family: 'Raleway', sans-serif;
