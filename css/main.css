@@ -67,13 +67,14 @@ body {
 
 .container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 448px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -782,14 +783,10 @@ bottom: -48px;
   }
 }
 
-.about {
-  padding: 84px 0;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .about .container {
-    min-width: 320px;
-    padding-left: 31px;
-    padding-right: 31px;
+  .about {
+    padding-top: 84px;
+    padding-bottom: 84px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -797,14 +794,17 @@ bottom: -48px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .about .container {
-    display: flex;
-  }
 }
 @media screen and (min-width: 1200px) {
   .about {
     padding-top: 169px;
     padding-bottom: 121px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about .container {
+    display: flex;
+    gap: 30px;
   }
 }
 
@@ -815,7 +815,6 @@ bottom: -48px;
   .pic-list {
     width: 100%;
     display: block;
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
