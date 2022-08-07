@@ -892,15 +892,27 @@ bottom: -48px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  max-width: 1280px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .prices {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    max-width: 1280px;
+  }
 }
 
 .prices-top-text {
   color: rgba(157, 164, 189, 0.6);
-  margin: var(--typical-margin);
+  margin-bottom: var(--typical-margin);
 }
 
 .prices-title {
@@ -908,8 +920,15 @@ bottom: -48px;
   margin-bottom: 44px;
 }
 
-.prices-wrap {
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .prices-wrap {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices-wrap {
+    display: flex;
+  }
 }
 
 .prices-list {
@@ -917,12 +936,16 @@ bottom: -48px;
   flex-grow: 1;
 }
 
-.prices-list-light {
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+@media screen and (min-width: 1200px) {
+  .prices-list-light {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
 }
 
-.prices-list-dark {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+@media screen and (min-width: 1200px) {
+  .prices-list-dark {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .prices-item-text {
@@ -957,7 +980,12 @@ bottom: -48px;
   color: var(--main-btn-color);
   margin: 0 auto;
   display: block;
-  margin-top: 50px;
+  margin-top: 62px;
+}
+@media screen and (min-width: 1200px) {
+  .prices-btn {
+    margin-top: 50px;
+  }
 }
 
 .benefits {
