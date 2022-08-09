@@ -888,13 +888,38 @@ bottom: -48px;
 
 .prices {
   background-color: #111319;
-  background-image: url(../img/prices-bg.png);
+  background-image: url(../img/prices-mob.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 84px;
   padding-bottom: 84px;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../img/prices-mob@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices {
+    background-image: url(../img/prices-tab.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../img/prices-tab@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices {
+    background-image: url(../img/prices-des.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../img/prices-des@2x.png);
+  }
 }
 @media screen and (min-width: 768px) {
   .prices {
@@ -919,7 +944,25 @@ bottom: -48px;
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
+@media screen and (max-width: 479px) {
+  .prices-title {
+    font-size: 36px;
+  }
+}
 
+.prices-wrap {
+  padding: 10px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .prices-wrap {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .prices-wrap {
+    padding: 30px 40px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .prices-wrap {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
@@ -932,8 +975,12 @@ bottom: -48px;
 }
 
 .prices-list {
-  padding: 30px 40px;
   flex-grow: 1;
+}
+@media screen and (min-width: 1200px) {
+  .prices-list {
+    padding: 30px 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -947,12 +994,27 @@ bottom: -48px;
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
+.prices-list-dark .prices-item:last-child {
+  margin-bottom: 0;
+}
 
 .prices-item-text {
-  font-size: 18px;
-  line-height: 1.67;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.14;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+@media screen and (min-width: 480px) {
+  .prices-item-text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 .prices-item-text:first-child {
   order: -1;
@@ -972,20 +1034,17 @@ bottom: -48px;
   margin-left: 6px;
   margin-right: 6px;
 }
-.prices-item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .prices-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .prices-btn {
   color: var(--main-btn-color);
   margin: 0 auto;
   display: block;
-  margin-top: 62px;
-}
-@media screen and (min-width: 1200px) {
-  .prices-btn {
-    margin-top: 50px;
-  }
+  margin-top: 50px;
 }
 
 .benefits {

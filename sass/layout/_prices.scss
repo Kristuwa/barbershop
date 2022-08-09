@@ -1,12 +1,29 @@
 .prices {
   background-color: #111319;
-  background-image: url(../img/prices-bg.png);
+  background-image: url(../img/prices-mob.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 84px;
   padding-bottom: 84px;
   margin: 0 auto;
+
+  @include retina {
+    background-image: url(../img/prices-mob@2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../img/prices-tab.png);
+    @include retina {
+      background-image: url(../img/prices-tab@2x.png);
+    }
+  }
+  @include desktop {
+    background-image: url(../img/prices-des.png);
+    @include retina {
+      background-image: url(../img/prices-des@2x.png);
+    }
+  }
 
   @include tablet {
     padding-top: 100px;
@@ -24,11 +41,25 @@
   margin-bottom: var(--typical-margin);
 }
 .prices-title {
+  @media screen and (max-width: 479px) {
+    font-size: 36px;
+  }
+
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
 
 .prices-wrap {
+  padding: 10px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 30px 40px;
+  }
+
   @media screen and (max-width: 1199px) {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
@@ -39,8 +70,10 @@
 }
 
 .prices-list {
-  padding: 30px 40px;
   flex-grow: 1;
+  @include desktop {
+    padding: 30px 40px;
+  }
 }
 
 .prices-list-light {
@@ -53,13 +86,29 @@
   @include desktop {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
+  .prices-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .prices-item-text {
-  font-size: 18px;
-  line-height: 1.67;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.14;
   letter-spacing: 0.02em;
   color: #9da4bd;
+
+  @include mobile {
+    font-size: 14px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
   &:first-child {
     order: -1;
   }
@@ -78,8 +127,11 @@
     margin-left: 6px;
     margin-right: 6px;
   }
-  &:last-child {
-    margin-bottom: 0;
+
+  @include desktop {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -87,9 +139,5 @@
   color: var(--main-btn-color);
   margin: 0 auto;
   display: block;
-  margin-top: 62px;
-
-  @include desktop {
-    margin-top: 50px;
-  }
+  margin-top: 50px;
 }
