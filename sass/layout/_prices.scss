@@ -136,9 +136,13 @@
   }
 }
 
-.prices__btn {
+.prices__link {
   color: var(--main-btn-color);
-  margin: 0 auto;
-  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
   margin-top: 50px;
+  margin-left: calc(50%);
+  transform: translateX(-50%);
+  text-align: center;
 }

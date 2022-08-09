@@ -884,8 +884,12 @@ fill: #ffffff;
   }
 }
 
-.about-content__btn {
+.about-content__link {
   color: var(--second-btn-color);
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
 }
 
 .prices {
@@ -1042,11 +1046,15 @@ fill: #ffffff;
   }
 }
 
-.prices__btn {
+.prices__link {
   color: var(--main-btn-color);
-  margin: 0 auto;
-  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
   margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .benefits {

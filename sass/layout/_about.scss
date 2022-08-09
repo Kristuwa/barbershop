@@ -94,6 +94,10 @@
   }
 }
 
-.about-content__btn {
+.about-content__link {
   color: var(--second-btn-color);
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
 }
