@@ -1354,30 +1354,52 @@ fill: #ffffff;
 
 .contact-wrap {
   background-color: #191c26;
-  background-image: url(../img/contacts-bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: calc(50% - 15px);
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .contact-wrap .container {
-  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .contact-wrap .container {
+    display: flex;
+  }
 }
 
 .online {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  width: calc(50% + 15px);
-  padding-right: 40px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+@media screen and (min-width: 768px) {
+  .online {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .online {
+    padding: 130px 40px 130px 0;
+    width: calc(50% + 15px);
+  }
 }
 
-.online-title {
+.online__title {
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
+@media screen and (max-width: 1199px) {
+  .online__title {
+    text-align: center;
+  }
+}
 
-.online-form {
+.online__form {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1385,10 +1407,22 @@ fill: #ffffff;
 
 .input-field {
   position: relative;
-  width: 265px;
+  width: 100%;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .input-field {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .input-field {
+    width: 265px;
+    margin-bottom: 0;
+  }
 }
 
-.online-input {
+.online__input {
   width: 100%;
   height: 24px;
   border: none;
@@ -1398,11 +1432,11 @@ fill: #ffffff;
   transition: border-color 300ms linear;
   color: rgba(190, 193, 202, 0.8);
 }
-.online-input:focus {
+.online__input:focus {
   border-color: #ffffff;
 }
 
-.online-label {
+.online__label {
   position: absolute;
   top: 0;
   left: 0;
@@ -1414,7 +1448,7 @@ fill: #ffffff;
   color: rgba(157, 164, 189, 0.4);
   transition: color 300ms linear, transform 300ms linear;
 }
-.online-input:focus + .online-label, .online-input:not(:placeholder-shown) + .online-label, .online-mess:focus + .online-label, .online-mess:not(:placeholder-shown) + .online-label {
+.online-input:focus + .online__label, .online-input:not(:placeholder-shown) + .online__label, .online-mess:focus + .online__label, .online-mess:not(:placeholder-shown) + .online__label {
   color: #ffffff;
   transform: translateY(-100%);
 }
@@ -1422,10 +1456,14 @@ fill: #ffffff;
 .text-field {
   width: 100%;
   position: relative;
-  margin-top: 44px;
+}
+@media screen and (min-width: 1200px) {
+  .text-field {
+    margin-top: 44px;
+  }
 }
 
-.online-mess {
+.online__mess {
   width: 100%;
   height: 76px;
   border: none;
@@ -1438,8 +1476,13 @@ fill: #ffffff;
   margin-bottom: 44px;
 }
 
-.online-btn {
+.online__btn {
   color: var(--main-btn-color);
+}
+@media screen and (max-width: 1199px) {
+  .online__btn {
+    margin: 0 auto;
+  }
 }
 
 textarea::-webkit-scrollbar {
@@ -1457,35 +1500,86 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-.contacts {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  width: calc(50% - 15px);
-  padding-left: 100px;
+@media screen and (max-width: 767px) {
+  .contacts {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: #191c26;
+    background-image: url(../img/contacts-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/contacts-bg-mob@2x.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 39px;
+    padding-right: 39px;
+    background-image: url(../img/contacts-bg-tab.png);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/contacts-bg-tab@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-color: #191c26;
+    background-image: url(../img/contacts-bg-des.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/contacts-bg-des@2x.png);
+  }
 }
 
-.contacts-title {
+.contacts__title {
   color: var(--main-title-color);
   margin-bottom: 40px;
 }
 
-.contacts-address {
+.contacts__address {
   font-style: normal;
   margin-bottom: 70px;
 }
 
-.contacts-item + .contacts-item {
+.contacts__item + .contacts__item {
   margin-top: var(--typical-margin);
 }
 
-.contacts-link {
+.contacts__icon {
+  margin-top: 5px;
+  margin-right: 16px;
+}
+
+.contacts__link {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  display: flex;
+  align-items: center;
 }
 
-.contacts-subtitle {
+.contacts__link--location {
+  align-items: flex-start;
+}
+
+.contacts__subtitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -1493,9 +1587,20 @@ textarea::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: var(--typical-margin);
+  display: flex;
+  align-items: center;
 }
 
-.contacts-time {
+.contacts__subtitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contacts__time {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
