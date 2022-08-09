@@ -482,15 +482,15 @@ fill: #ffffff;
 }
 
 /*.nav__link.current:after {
-content: '';
-position: absolute;
-width: 100%;
-height: 4px;
-background-color: var(--accent-color);
-border-radius: 3px;
-left: 0;
-bottom: -48px;
-}*/
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: var(--accent-color);
+	border-radius: 3px;
+	left: 0;
+	bottom: -48px;
+ }*/
 .connect {
   display: none;
   margin-left: auto;
@@ -579,15 +579,15 @@ bottom: -48px;
   }
 }
 
-.mob-menu-list {
+.mob-menu__list {
   margin-bottom: 40px;
 }
 
-.mob-menu-item:not(:last-child) {
+.mob-menu__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.mob-menu-link {
+.mob-menu__link {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3888888889;
@@ -600,7 +600,7 @@ bottom: -48px;
   margin-bottom: 64px;
 }
 
-.mob-connect-tel {
+.mob-connect__tel {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3888888889;
@@ -609,18 +609,18 @@ bottom: -48px;
   color: #303030;
 }
 
-.mob-connect-btn {
+.mob-connect__btn {
   display: block;
   color: var(--second-btn-color);
   margin-top: 24px;
 }
 
-.mob-soc-list {
+.mob-soc__list {
   padding-left: 100px;
   position: relative;
 }
 
-.mob-soc-list::before {
+.mob-soc__list::before {
   content: "";
   position: absolute;
   left: 0;
@@ -630,11 +630,11 @@ bottom: -48px;
   background-color: #303030;
 }
 
-.mob-soc-item:not(:last-child) {
+.mob-soc__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.mob-soc-link {
+.mob-soc__link {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.3571428571;
@@ -935,70 +935,70 @@ bottom: -48px;
   }
 }
 
-.prices-top-text {
+.prices__top-text {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--typical-margin);
 }
 
-.prices-title {
+.prices__title {
   color: var(--main-title-color);
   margin-bottom: 44px;
 }
 @media screen and (max-width: 479px) {
-  .prices-title {
+  .prices__title {
     font-size: 36px;
   }
 }
 
-.prices-wrap {
+.prices__wrap {
   padding: 10px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .prices-wrap {
+  .prices__wrap {
     padding: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .prices-wrap {
+  .prices__wrap {
     padding: 30px 40px;
   }
 }
 @media screen and (max-width: 1199px) {
-  .prices-wrap {
+  .prices__wrap {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 @media screen and (min-width: 1200px) {
-  .prices-wrap {
+  .prices__wrap {
     display: flex;
   }
 }
 
-.prices-list {
+.prices__list {
   flex-grow: 1;
 }
 @media screen and (min-width: 1200px) {
-  .prices-list {
+  .prices__list {
     padding: 30px 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .prices-list-light {
+  .prices__list-light {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .prices-list-dark {
+  .prices__list-dark {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
-.prices-list-dark .prices-item:last-child {
+.prices__list-dark .prices__item:last-child {
   margin-bottom: 0;
 }
 
-.prices-item-text {
+.prices__item-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 2.14;
@@ -1006,27 +1006,27 @@ bottom: -48px;
   color: #9da4bd;
 }
 @media screen and (min-width: 480px) {
-  .prices-item-text {
+  .prices__item-text {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
-  .prices-item-text {
+  .prices__item-text {
     font-size: 18px;
     line-height: 1.67;
   }
 }
-.prices-item-text:first-child {
+.prices__item-text:first-child {
   order: -1;
 }
 
-.prices-item {
+.prices__item {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.prices-item::before {
+.prices__item::before {
   content: "";
   flex-grow: 1;
   height: 1px;
@@ -1035,12 +1035,12 @@ bottom: -48px;
   margin-right: 6px;
 }
 @media screen and (min-width: 1200px) {
-  .prices-item:last-child {
+  .prices__item:last-child {
     margin-bottom: 0;
   }
 }
 
-.prices-btn {
+.prices__btn {
   color: var(--main-btn-color);
   margin: 0 auto;
   display: block;

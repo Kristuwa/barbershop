@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Barbershop&#128514;</title>
+    <title>Barbershop</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -39,15 +39,13 @@
               <a href="#about" class="current nav__link link">О нас</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link link">Услуги и цены</a>
+              <a href="#prices" class="nav__link link">Услуги и цены</a>
             </li>
             <li class="nav__item">
               <a href="#masters" class="nav__link link">Мастера</a>
             </li>
             <li class="nav__item">
-              <a href="https://www.google.com/" class="nav__link link"
-                >Контакты</a
-              >
+              <a href="#contacts" class="nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -72,7 +70,7 @@
         </button>
       </div>
       <div class="mob-menu is-hidden">
-        <div class="mob-menu-top">
+        <div class="mob-menu__top">
           <button
             type="button"
             class="menu-close-btn"
@@ -82,46 +80,48 @@
               <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-          <ul class="mob-menu-list list">
-            <li class="mob-menu-item">
-              <a href="#about" class="current mob-menu-link link">О нас</a>
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="#about" class="current mob-menu__link link">О нас</a>
             </li>
-            <li class="mob-menu-item">
-              <a href="" class="mob-menu-link link">Услуги и цены</a>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link link">Услуги и цены</a>
             </li>
-            <li class="mob-menu-item">
-              <a href="#masters" class="mob-menu-link link">Мастера</a>
+            <li class="mob-menu__item">
+              <a href="#masters" class="mob-menu__link link">Мастера</a>
             </li>
-            <li class="mob-menu-item">
-              <a href="https://www.google.com/" class="mob-menu-link link"
-                >Контакты</a
-              >
+            <li class="mob-menu__item">
+              <a href="#contacts" class="mob-menu__link link">Контакты</a>
             </li>
           </ul>
 
-          <div class="mob-menu-bottom">
+          <div class="mob-menu__bottom">
             <div class="mob-connect">
-              <a class="mob-connect-tel link" href="tel:+380441111111"
+              <a class="mob-connect__tel link" href="tel:+380441111111"
                 >+38 044 111 11 11</a
               >
-              <button type="button" class="mob-connect-btn btn" data-modal-open>
+              <button
+                type="button"
+                class="mob-connect__btn btn"
+                data-modal-open
+              >
                 онлайн-запись
               </button>
             </div>
-            <ul class="mob-soc-list list">
-              <li class="mob-soc-item">
+            <ul class="mob-soc__list list">
+              <li class="mob-soc__item">
                 <a
                   href="https://www.instagram.com/"
-                  class="mob-soc-link link"
+                  class="mob-soc__link link"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
                   >Instagram</a
                 >
               </li>
-              <li class="mob-soc-item">
+              <li class="mob-soc__item">
                 <a
                   href="https://www.youtube.com/"
-                  class="mob-soc-link link"
+                  class="mob-soc__link link"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
                   >Youtube</a
@@ -139,7 +139,7 @@
             <ul class="soc__list list">
               <li class="soc__item">
                 <a
-                  href="https://www.google.com/"
+                  href="https://www.instagram.com/"
                   class="soc__link link"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
@@ -148,7 +148,7 @@
               </li>
               <li class="soc__item">
                 <a
-                  href=""
+                  href="https://www.youtube.com/"
                   class="soc__link link"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
@@ -177,7 +177,7 @@
         </div>
       </section>
 
-      <section id="about" class="about">
+      <section id="about" id="about" class="about">
         <div class="container">
           <ul class="pic-list list">
             <li class="pic-list__item">
@@ -264,56 +264,56 @@
           </div>
         </div>
       </section>
-      <section class="prices">
+      <section id="prices" class="prices">
         <div class="container">
-          <p class="prices-top-text top-text">
+          <p class="prices__top-text top-text">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="prices-title title" data-aos="flip-right">
+          <h2 class="prices__title title" data-aos="flip-right">
             Услуги и цены
           </h2>
-          <div class="prices-wrap">
-            <ul class="prices-list prices-list-light list">
-              <li class="prices-item">
-                <p class="prices-item-text">Мужская стрижка</p>
-                <p class="prices-item-text">от 300 грн.</p>
+          <div class="prices__wrap">
+            <ul class="prices__list prices__list-light list">
+              <li class="prices__item">
+                <p class="prices__item-text">Мужская стрижка</p>
+                <p class="prices__item-text">от 300 грн.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Стрижка бороды</p>
-                <p class="prices-item-text">от 200 грн.</p>
+              <li class="prices__item">
+                <p class="prices__item-text">Стрижка бороды</p>
+                <p class="prices__item-text">от 200 грн.</p>
               </li>
               <li class="prices-item">
                 <p class="prices-item-text">Стрижка усов</p>
                 <p class="prices-item-text">от 200 грн.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Бритье опасной бритвой</p>
-                <p class="prices-item-text">от 200 грн.</p>
+              <li class="prices__item">
+                <p class="prices__item-text">Бритье опасной бритвой</p>
+                <p class="prices__item-text">от 200 грн.</p>
               </li>
             </ul>
-            <ul class="prices-list prices-list-dark list">
-              <li class="prices-item">
-                <p class="prices-item-text">Cтрижка у стажера</p>
-                <p class="prices-item-text">от 50 грн.</p>
+            <ul class="prices__list prices__list-dark list">
+              <li class="prices__item">
+                <p class="prices__item-text">Cтрижка у стажера</p>
+                <p class="prices__item-text">от 50 грн.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Стрижка под насадку</p>
-                <p class="prices-item-text">от 200 грн.</p>
+              <li class="prices__item">
+                <p class="prices__item-text">Стрижка под насадку</p>
+                <p class="prices__item-text">от 200 грн.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Детская стрижка (до 12 лет)</p>
-                <p class="prices-item-text">от 300 грн.</p>
+              <li class="prices__item">
+                <p class="prices__item-text">Детская стрижка (до 12 лет)</p>
+                <p class="prices__item-text">от 300 грн.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Камуфлирование седины</p>
-                <p class="prices-item-text">от 200 грн.</p>
+              <li class="prices__item">
+                <p class="prices__item-text">Камуфлирование седины</p>
+                <p class="prices__item-text">от 200 грн.</p>
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn">онлайн-запись</button>
+          <button type="button" class="prices__btn btn">онлайн-запись</button>
         </div>
       </section>
-      <section class="benefits">
+      <section id="benefits" class="benefits">
         <div class="container">
           <div class="benefits__text-container">
             <p class="benefits-top-text top-text">Cтарая традиционная школа</p>
