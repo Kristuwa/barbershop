@@ -1048,27 +1048,100 @@ bottom: -48px;
 }
 
 .benefits {
-  padding-top: 143px;
-  padding-bottom: 137px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 143px;
+    padding-bottom: 137px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__text-container {
+    width: 500px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .benefits-item {
-  width: 170px;
+  width: 135px;
   height: 133px;
   background-color: #f7f7f7;
   padding: 20px 24px;
 }
 .benefits-item:nth-child(odd) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .benefits-item:nth-child(even) {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .benefits-item {
+    width: 193px;
+  }
+  .benefits-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .benefits-item:nth-child(even) {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-item {
+    width: 170px;
+  }
 }
 
 .benefits-list {
-  width: 370px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 320px;
+}
+@media screen and (min-width: 321px) {
+  .benefits-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .benefits-list {
+    width: 447px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-list {
+    margin-left: 240px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    width: 370px;
+    margin-right: 130px;
+  }
 }
 
 .benefits-item-count {
@@ -1107,9 +1180,26 @@ bottom: -48px;
   color: var(--second-title-color);
   margin-bottom: var(--typical-margin);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-title {
+    width: 420px;
+  }
+}
 
 .benefits-bottom-text {
+  font-size: 18px;
+  line-height: 1.67;
   color: #555555;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-bottom-text {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .benefits-bottom-text {
+    margin-bottom: 44px;
+  }
 }
 
 .masters {
