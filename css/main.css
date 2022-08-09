@@ -1354,32 +1354,61 @@ fill: #ffffff;
 
 .contact-wrap {
   background-color: #191c26;
-  max-width: 1280px;
-  margin: 0 auto;
+  background-image: url(../img/contacts-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 50%;
 }
-
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contact-wrap {
+    background-image: url(../img/contacts-bg-mob@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-wrap {
+    background-image: url(../img/contacts-bg-tab.png);
+    background-size: 100% 449px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contact-wrap {
+    background-image: url(../img/contacts-bg-tab@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-wrap {
+    background-image: url(../img/contacts-bg-des.png);
+    background-position: right;
+    background-size: calc(50% - 15px) 644px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contact-wrap {
+    background-image: url(../img/contacts-bg-des@2x.png);
+  }
+}
 .contact-wrap .container {
-  padding-left: 0;
-  padding-right: 0;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
   .contact-wrap .container {
-    display: flex;
+    flex-direction: row;
   }
 }
 
 .online {
   padding-top: 84px;
   padding-bottom: 84px;
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media screen and (min-width: 768px) {
   .online {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1431,6 +1460,7 @@ fill: #ffffff;
   outline: none;
   transition: border-color 300ms linear;
   color: rgba(190, 193, 202, 0.8);
+  transition: border-color var(--time-animation) var(--function-animation);
 }
 .online__input:focus {
   border-color: #ffffff;
@@ -1500,50 +1530,27 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts {
-    padding-top: 84px;
-    padding-bottom: 84px;
-    padding-left: 31px;
-    padding-right: 31px;
-    background-color: #191c26;
-    background-image: url(../img/contacts-bg-mob.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-  }
+.contacts {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
 }
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../img/contacts-bg-mob@2x.png);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contacts {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 39px;
-    padding-right: 39px;
-    background-image: url(../img/contacts-bg-tab.png);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../img/contacts-bg-tab@2x.png);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    background-color: #191c26;
-    background-image: url(../img/contacts-bg-des.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: calc(50% - 15px);
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../img/contacts-bg-des@2x.png);
+    padding-left: 100px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: calc(50% - 15px);
   }
 }
 
@@ -1552,9 +1559,21 @@ textarea::-webkit-scrollbar-thumb {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contacts__address {
   font-style: normal;
   margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__address {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item + .contacts__item {
@@ -1577,6 +1596,12 @@ textarea::-webkit-scrollbar-thumb {
 
 .contacts__link--location {
   align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__work-time {
+    margin: 0 auto;
+  }
 }
 
 .contacts__subtitle {

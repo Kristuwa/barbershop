@@ -1,14 +1,14 @@
 .online {
   padding-top: 84px;
   padding-bottom: 84px;
-  padding-left: 31px;
-  padding-right: 31px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @include tablet {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @include desktop {
@@ -56,6 +56,7 @@
   outline: none;
   transition: border-color 300ms linear;
   color: rgba(190, 193, 202, 0.8);
+  transition: border-color var(--time-animation) var(--function-animation);
   &:focus {
     border-color: #ffffff;
   }
