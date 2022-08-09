@@ -316,37 +316,37 @@
       <section id="benefits" class="benefits">
         <div class="container">
           <div class="benefits__text-container">
-            <p class="benefits-top-text top-text">Cтарая традиционная школа</p>
-            <h2 class="benefits-title title" data-aos="zoom-in-up">
+            <p class="benefits__top-text top-text">Cтарая традиционная школа</p>
+            <h2 class="benefits__title title" data-aos="zoom-in-up">
               Почему приходят именно к нам?
             </h2>
-            <p class="benefits-bottom-text bottom-text">
+            <p class="benefits__bottom-text bottom-text">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
               прочувствовать, чем 10 раз прочитать.
             </p>
           </div>
 
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <span class="benefits-item-count">600</span>
-              <p class="benefits-item-text">Довольных клиентов в день</p>
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <span class="benefits__item-count">600</span>
+              <p class="benefits__item-text">Довольных клиентов в день</p>
             </li>
-            <li class="benefits-item">
-              <span class="benefits-item-count">50</span>
-              <p class="benefits-item-text">Наград за отличный сервис</p>
+            <li class="benefits__item">
+              <span class="benefits____tem-count">50</span>
+              <p class="benefits__item-text">Наград за отличный сервис</p>
             </li>
-            <li class="benefits-item">
-              <span class="benefits-item-count">20</span>
-              <p class="benefits-item-text">Лучших мастеров Киева</p>
+            <li class="benefits__item">
+              <span class="benefits__item-count">20</span>
+              <p class="benefits__item-text">Лучших мастеров Киева</p>
             </li>
-            <li class="benefits-item">
-              <span class="benefits-item-count">100</span>
-              <p class="benefits-item-text">Подарков постоянным клиентам</p>
+            <li class="benefits__item">
+              <span class="benefits__item-count">100</span>
+              <p class="benefits__item-text">Подарков постоянным клиентам</p>
             </li>
           </ul>
         </div>
       </section>
-      <!--  <section id="masters" class="masters">
+      <section id="masters" class="masters">
         <div class="container">
           <p class="masters__top-text top-text top-text--dark">
             для настоящих ценителей атмосферы
@@ -355,12 +355,48 @@
           <ul class="card-list list">
             <li class="card-list__item">
               <div class="card-list__top-wrap">
-                <img
-                  src="./img/masters-img-1.jpeg"
-                  alt="Барбер стрежет клиента"
-                  width="370"
-                  height="346"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/masters-01-des.jpg    1x,
+                      ./img/masters-01-des@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="346"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/masters-01-tab.jpg    1x,
+                      ./img/masters-01-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    width="450"
+                    height="346"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/masters-01-mob.jpg    1x,
+                      ./img/masters-01-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 480px)"
+                    width="418"
+                    height="346"
+                  />
+
+                  <img
+                    src="./img/masters-01-mob.jpg"
+                    alt="Барбер стрежет клиента"
+                    width="418"
+                    height="346"
+                  />
+                </picture>
+
                 <p class="card-list__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
                   eveniet suscipit tempore iste reprehenderit nobis eius
@@ -373,55 +409,253 @@
               <p lang="en" class="card-list__item-text">Extreme Barber</p>
               <ul class="card-list__soc-list list socials">
                 <li class="socials__item">
-                  <a href="" class="socials__link link"> </a>
-                </li>
-                <li class="socials__item">
-                  <a href="" class="socials__link link"
-                    ><svg class="socials__icon" width="20" height="20">
-                      <use
-                        href="./img/symbol-defs.svg#icon-instagram"
-                      ></use></svg></a>
-                </li>
-                <li class="socials__item">
-                  <a href="" class="socials__link link">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="socials__link link"
+                    aria-label="Instagram"
+                  >
                     <svg class="socials__icon" width="20" height="20">
-                      <use
-                        href="./img/symbol-defs.svg#icon-instagram"
-                      ></use></svg></a>
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="socials__item">
-                  <a href="" class="socials__link link"
-                    ><svg class="socials__icon" width="20" height="20">
-                      <use
-                        href="./img/symbol-defs.svg#icon-instagram"
-                      ></use></svg></a>
+                  <a
+                    href="https://www.twitter.com/"
+                    class="socials__link link"
+                    aria-label="Twitter"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="socials__link link"
+                    aria-label="Facebook"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="socials__link link"
+                    aria-label="Linkedin"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
             <li class="card-list__item">
-              <img
-                src="./img/masters-img-2.jpeg"
-                alt="Барбер стрежет клиента"
-                width="370"
-                height="346"
-              />
+              <div class="card-list__top-wrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/masters-02-des.jpg    1x,
+                      ./img/masters-02-des@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="346"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/masters-02-tab.jpg    1x,
+                      ./img/masters-02-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    width="450"
+                    height="346"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/masters-02-mob.jpg    1x,
+                      ./img/masters-02-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 480px)"
+                    width="418"
+                    height="346"
+                  />
+
+                  <img
+                    src="./img/masters-02-mob.jpg"
+                    alt="Барбер стрежет клиента"
+                    width="418"
+                    height="346"
+                  />
+                </picture>
+                <p class="card-list__top-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  eveniet suscipit tempore iste reprehenderit nobis eius
+                  repellendus ab quidem veniam esse, vero dolorem exercitationem
+                  tempora inventore, quisquam minus cum mollitia.
+                </p>
+              </div>
               <h3 lang="en" class="card-list__item-title">Michele Doe</h3>
               <p lang="en" class="card-list__item-text">Extreme Barber</p>
+              <ul class="card-list__soc-list list socials">
+                <li class="socials__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="socials__link link"
+                    aria-label="Instagram"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.twitter.com/"
+                    class="socials__link link"
+                    aria-label="Twitter"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="socials__link link"
+                    aria-label="Facebook"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="socials__link link"
+                    aria-label="Linkedin"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="card-list__item">
-              <img
-                src="./img/masters-img-3.jpeg"
-                alt="Барбер стрежет клиента"
-                width="370"
-                height="346"
-              />
+              <div class="card-list__top-wrap">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/masters-03-des.jpg    1x,
+                      ./img/masters-03-des@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 1200px)"
+                    width="370"
+                    height="346"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/masters-03-tab.jpg    1x,
+                      ./img/masters-03-tab@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 768px)"
+                    width="450"
+                    height="346"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/masters-03-mob.jpg    1x,
+                      ./img/masters-03-mob@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                    media="(min-width: 480px)"
+                    width="418"
+                    height="346"
+                  />
+
+                  <img
+                    src="./img/masters-03-mob.jpg"
+                    alt="Барбер стрежет клиента"
+                    width="418"
+                    height="346"
+                  />
+                </picture>
+                <p class="card-list__top-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  eveniet suscipit tempore iste reprehenderit nobis eius
+                  repellendus ab quidem veniam esse, vero dolorem exercitationem
+                  tempora inventore, quisquam minus cum mollitia.
+                </p>
+              </div>
               <h3 lang="en" class="card-list__item-title">Alan Black</h3>
               <p lang="en" class="card-list__item-text">Extreme Barber</p>
+              <ul class="card-list__soc-list list socials">
+                <li class="socials__item">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="socials__link link"
+                    aria-label="Instagram"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.twitter.com/"
+                    class="socials__link link"
+                    aria-label="Twitter"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.facebook.com/"
+                    class="socials__link link"
+                    aria-label="Facebook"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="socials__link link"
+                    aria-label="Linkedin"
+                  >
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </div> 
-       </section>
-      <section class="gallery">
+        </div>
+      </section>
+      <!--  <section class="gallery">
         <div class="container">
           <p class="gallery-top-text top-text">
             На латинском языке “барба” означает “борода”
