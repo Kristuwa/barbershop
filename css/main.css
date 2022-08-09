@@ -206,7 +206,7 @@ body {
 
 .modal {
   width: 500px;
-  min-height: 600px;
+  min-height: 500px;
   background-color: #ffffff;
   border-radius: 5px;
   position: absolute;
@@ -292,8 +292,8 @@ body {
 }
 
 /* .modal-input:not(:placeholder-shown) {
-border-color: #714eef;
-} */
+	border-color: #714eef;
+ } */
 .modal-label {
   font-size: 12px;
   color: #9da4bd;
@@ -335,91 +335,91 @@ border-color: #714eef;
 
 /* ------------------Перекключатель---------------------------- */
 /* .check-text::before {
-content: "";
-width: 30px;
-height: 30px;
-border: 1px solid #999999;
-border-radius: 50px;
-margin-right: 5px;
-transition: background-color 300ms linear;
-}
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 1px solid #999999;
+	border-radius: 50px;
+	margin-right: 5px;
+	transition: background-color 300ms linear;
+ }
 
-.modal-check:checked + .check-text::before {
-background-color: #c4eecd;
-}
+ .modal-check:checked + .check-text::before {
+	background-color: #c4eecd;
+ }
 
-.check-text::after {
-content: "";
-position: absolute;
-left: 10px;
-width: 8px;
-height: 30px;
-border-radius: 50px;
-background-color: #b5b7bf;
-left: 11px;
-transform: rotate(-45deg);
-transition: transform 300ms linear, background-color 300ms linear;
-}
+ .check-text::after {
+	content: "";
+	position: absolute;
+	left: 10px;
+	width: 8px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: #b5b7bf;
+	left: 11px;
+	transform: rotate(-45deg);
+	transition: transform 300ms linear, background-color 300ms linear;
+ }
 
-.modal-check:checked + .check-text::after {
-transform: rotate(45deg);
-background-color: #ffffff;
-border: 1px solid #999999;
-} */
+ .modal-check:checked + .check-text::after {
+	transform: rotate(45deg);
+	background-color: #ffffff;
+	border: 1px solid #999999;
+ } */
 /* ---------------------Повзунок----------------------------- */
 /* .check-text::before {
-content: "";
-width: 40px;
-height: 10px;
-border: 1px solid #999999;
-border-radius: 50px;
-margin-right: 5px;
-transition: background-color 300ms linear;
-}
+	content: "";
+	width: 40px;
+	height: 10px;
+	border: 1px solid #999999;
+	border-radius: 50px;
+	margin-right: 5px;
+	transition: background-color 300ms linear;
+ }
 
-.check-text::after {
-content: "";
-position: absolute;
-width: 18px;
-height: 18px;
-border-radius: 50%;
-background-color: #b5b7bf;
-left: 3px;
-transition: transform 300ms linear, background-color 300ms linear;
-}
+ .check-text::after {
+	content: "";
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #b5b7bf;
+	left: 3px;
+	transition: transform 300ms linear, background-color 300ms linear;
+ }
 
-.modal-check:checked + .check-text::after {
-transform: translate(16px);
-background-color: #ffffff;
-border: 1px solid #999999;
-}
+ .modal-check:checked + .check-text::after {
+	transform: translate(16px);
+	background-color: #ffffff;
+	border: 1px solid #999999;
+ }
 
-.modal-check:checked + .check-text::before {
-background-color: #c4eecd;
-} */
+ .modal-check:checked + .check-text::before {
+	background-color: #c4eecd;
+ } */
 /* -----------------Через спрайт----------------------- */
 /* .check-text span {
-width: 16px;
-height: 15px;
-border: 2px solid #090b13;
-border-radius: 3px;
-margin-right: 5px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
+	width: 16px;
+	height: 15px;
+	border: 2px solid #090b13;
+	border-radius: 3px;
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
 
-.check-icon {
-fill: transparent;
-}
+ .check-icon {
+	fill: transparent;
+ }
 
-.modal-check:checked + .check-text span {
-background-color: var(--accent-color);
-border: none;
-}
-.modal-check:checked + .check-text .check-icon {
-fill: #ffffff;
-} */
+ .modal-check:checked + .check-text span {
+	background-color: var(--accent-color);
+	border: none;
+ }
+ .modal-check:checked + .check-text .check-icon {
+	fill: #ffffff;
+ } */
 /* --------------Через Бефор-------------------------- */
 .header {
   position: absolute;
