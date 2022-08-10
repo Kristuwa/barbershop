@@ -38,7 +38,7 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a href="#about" class="current nav__link link">О нас</a>
+              <a href="#about" class="nav__link link">О нас</a>
             </li>
             <li class="nav__item">
               <a href="#prices" class="nav__link link">Услуги и цены</a>
@@ -57,9 +57,7 @@
             href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="connect__btn btn" data-modal-open>
-            онлайн-запись
-          </button>
+          <a href="#online" class="connect__btn btn link"> онлайн-запись </a>
         </div>
         <button
           type="button"
@@ -102,13 +100,9 @@
               <a class="mob-connect__tel link" href="tel:+380441111111"
                 >+38 044 111 11 11</a
               >
-              <button
-                type="button"
-                class="mob-connect__btn btn"
-                data-modal-open
-              >
+              <a href="#online" class="mob-connect__btn btn link">
                 онлайн-запись
-              </button>
+              </a>
             </div>
             <ul class="mob-soc__list list">
               <li class="mob-soc__item">
@@ -401,10 +395,10 @@
                 </picture>
 
                 <p class="card-list__top-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  eveniet suscipit tempore iste reprehenderit nobis eius
-                  repellendus ab quidem veniam esse, vero dolorem exercitationem
-                  tempora inventore, quisquam minus cum mollitia.
+                  Барбер наверняка знает, как стричь мужские волосы (бороду в
+                  том числе). Мужчине нужна хорошая стрижка и профи, который с
+                  этим справляется круче всех. А кто может лучше всех в этом
+                  разбираться? Тот, кто только этим и занимается))) Барбер!!
                 </p>
               </div>
 
@@ -501,10 +495,10 @@
                   />
                 </picture>
                 <p class="card-list__top-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  eveniet suscipit tempore iste reprehenderit nobis eius
-                  repellendus ab quidem veniam esse, vero dolorem exercitationem
-                  tempora inventore, quisquam minus cum mollitia.
+                  Барбершоп – это место, где вас отлично побреют, постригут и
+                  приведут в порядок бороду и усы. Во многих барбершопах до сих
+                  пор используют опасные бритвы. И вы не жили по-настоящему,
+                  если вас не брили опасной бритвой! Это круто!
                 </p>
               </div>
               <h3 lang="en" class="card-list__item-title">Michele Doe</h3>
@@ -600,10 +594,11 @@
                   />
                 </picture>
                 <p class="card-list__top-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  eveniet suscipit tempore iste reprehenderit nobis eius
-                  repellendus ab quidem veniam esse, vero dolorem exercitationem
-                  tempora inventore, quisquam minus cum mollitia.
+                  Барбер – отличный собеседник для разговоров. Барберы – это
+                  интересные ребята, у которых в запасе много интересных
+                  историй. В барбершопе вы можете говорить обо всем. Машины,
+                  политика, война, женщины и т. д. И в дискуссии участвуют все!
+                  И клиенты, и барбер.
                 </p>
               </div>
               <h3 lang="en" class="card-list__item-title">Alan Black</h3>
@@ -951,113 +946,6 @@
         </li>
       </ul>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="masters-soc-icon" width="18" height="18">
-            <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Записаться онлайн</p>
-
-        <form>
-          <div class="modal-field">
-            <label class="modal-label"> Ваше имя</label>
-            <input
-              type="text"
-              class="modal-input"
-              name="user-name"
-              placeholder=" "
-              required
-              minlength="2"
-            />
-          </div>
-          <div class="modal-field">
-            <label for="user-tel" class="modal-label">Ваш телефон</label>
-            <input
-              type="tel"
-              class="modal-input"
-              name="user-tel"
-              placeholder="+380 (96) 111-11-11"
-              required
-              title="+380 (96) 111-11-11"
-              id="user-tel"
-            />
-          </div>
-          <div class="modal-field">
-            <label for="user-email" class="modal-label">Ваша почта</label>
-            <div class="input-wrap">
-              <input
-                type="email"
-                class="modal-input"
-                name="user-email"
-                placeholder="Email"
-                id="user-email"
-              />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./img/symbol-defs.svg#icon-person"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field">
-            <label for="user-text" class="modal-label">Ваш комментарий</label>
-            <textarea
-              name="user-text"
-              id="user-text"
-              class="modal-text"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
-
-          <div class="modal-field">
-            <input
-              type="checkbox"
-              name="privacy"
-              value="true"
-              class="modal-check visually-hidden"
-              id="privacy"
-            />
-            <label for="privacy" class="check-text">
-              <!-- <span>
-                <svg class="check-icon" width="11" height="8">
-                  <use href="./img/symbol-defs.svg#icon-check"></use>
-                </svg>
-              </span> -->
-              Соглашаюсь с политикой конфиденциальности</label
-            >
-          </div>
-          <!-- <fieldset>
-            <legend>size</legend>
-            <label for="big">big</label>
-            <input type="radio" id="big" name="size" value="big" />
-            <label for="small">small</label>
-            <input type="radio" id="small" name="size" value="small" />
-          </fieldset>
-
-          <fieldset>
-            <legend>add</legend>
-            <label for="tomato">tomato</label>
-            <input type="checkbox" id="tomato" name="add" value="tomato" />
-            <label for="cheese">cheese</label>
-            <input type="checkbox" id="cheese" name="add" value="cheese" />
-            <label for="pepperoni">pepperoni</label>
-            <input
-              type="checkbox"
-              id="pepperoni"
-              name="add"
-              value="pepperoni"
-            />
-          </fieldset>
-          <label for="user-city" class="modal-label">Ваше місто</label>
-          <select name="user-city" id="user-city" class="modal-input">
-            <option value="Paris" class="opt">Paris</option>
-            <option value="London">London</option>
-            <option value="Noviy Rozdil">Noviy Rozdil</option>
-          </select> -->
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

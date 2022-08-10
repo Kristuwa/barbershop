@@ -58,6 +58,8 @@
   transition: color 300ms ease;
   position: relative;
 
+  transition: color var(--time-animation) var(--function-animation);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -101,6 +103,10 @@
 
 .connect__btn {
   color: var(--main-btn-color);
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
   margin-left: 40px;
 
   @include tablet {
@@ -170,6 +176,13 @@
   text-align: center;
   letter-spacing: 0.1em;
   color: #303030;
+
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-connect {
@@ -183,10 +196,20 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
+
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-connect__btn {
-  display: block;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
   color: var(--second-btn-color);
   margin-top: 24px;
 }
@@ -209,6 +232,7 @@
 .mob-soc__item:not(:last-child) {
   margin-bottom: 24px;
 }
+
 .mob-soc__link {
   font-weight: 600;
   font-size: 14px;
@@ -216,8 +240,15 @@
   letter-spacing: 0.2em;
 
   color: #303030;
+
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.current {
+/*.current {
   color: var(--accent-color);
-}
+}*/

@@ -22,18 +22,9 @@
   fill: #303030;
 
   transition: fill var(--time-animation) var(--function-animation);
+
   &:hover,
   &:focus {
     fill: #ff6c00;
   }
 }
-
-/* .socials__link:hover,
- .socials__link:focus {
-	background-color: teal;
- }
- 
- .socials__link:hover .socials__icon,
- .socials__link:focus .masters-soc-icon {
-	fill: chocolate;
- } */
