@@ -73,6 +73,7 @@
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
   transition: color 300ms linear, transform 300ms linear;
+
   .online-input:focus + &,
   .online-input:not(:placeholder-shown) + &,
   .online-mess:focus + &,
