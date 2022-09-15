@@ -1,7 +1,12 @@
+.hero {
+  min-width: 320px;
+}
+
 .hero .container {
   display: flex;
-  width: 100%;
   padding: 0;
+  width: 100%;
+
   @include tablet {
     width: 720px;
     padding-left: 15px;

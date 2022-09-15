@@ -26,7 +26,6 @@
   display: none;
 
   @include tablet {
-    width: 100%;
     display: block;
   }
 
@@ -67,6 +66,7 @@
 .about-content__top-text {
   margin-bottom: var(--typical-margin);
 }
+
 .about-content__title {
   font-size: 28px;
   line-height: 1.18;
@@ -82,6 +82,7 @@
   margin-bottom: var(--typical-margin);
   color: #555555;
 }
+
 .about-content__text {
   font-size: 14px;
   line-height: 1.86;

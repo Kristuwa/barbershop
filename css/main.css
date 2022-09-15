@@ -70,6 +70,7 @@ body {
 .container {
   width: 100%;
   min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -663,10 +664,14 @@ body {
 /*.current {
   color: var(--accent-color);
 }*/
+.hero {
+  min-width: 320px;
+}
+
 .hero .container {
   display: flex;
-  width: 100%;
   padding: 0;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero .container {
@@ -830,7 +835,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .pic-list {
-    width: 100%;
     display: block;
   }
 }
