@@ -3,9 +3,10 @@
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
-  > .container {
-    @extend %align-list;
-  }
+
+  //   > .container {
+  //     @extend %align-list;
+  //   }
 }
 
 .header__logo {

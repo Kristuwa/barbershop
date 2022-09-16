@@ -12,6 +12,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
   @include desktop {
     width: 1200px;
   }
@@ -75,7 +76,7 @@
   background-position: center;
   background-size: cover;
   // padding: 272px 96px 206px 96px;
-  padding: 208px 31px 183px;
+  padding: 208px 15px 183px;
   flex-grow: 1;
 
   @include retina {
@@ -130,11 +131,16 @@
 }
 .hero-content__title {
   font-family: "Raleway", sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   margin-bottom: var(--typical-margin);
   @extend %align-list;
+
+  @include tablet {
+    font-size: 48px;
+  }
+
   @include desktop {
     font-size: 72px;
     line-height: 1.16;
