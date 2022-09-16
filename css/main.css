@@ -424,6 +424,12 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .header__logo {
   margin-right: 60px;

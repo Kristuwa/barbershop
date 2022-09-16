@@ -4,9 +4,12 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  //   > .container {
-  //     @extend %align-list;
-  //   }
+  @include tablet {
+    & .container {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .header__logo {
