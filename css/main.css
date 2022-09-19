@@ -548,7 +548,6 @@ body {
   background-color: transparent;
   border: transparent;
   display: block;
-  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn,
@@ -557,6 +556,7 @@ body {
   }
 }
 
+.menu-open-btn,
 .menu-close-btn {
   position: absolute;
   top: 48px;
@@ -569,11 +569,11 @@ body {
   right: 0;
   z-index: 1;
   background-color: #ffffff;
-  width: 320px;
+  width: 100wh;
   height: 100vh;
   padding-top: 118px;
   padding-bottom: 48px;
-  padding-left: 61px;
+  padding-left: 31px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -582,6 +582,7 @@ body {
 @media screen and (min-width: 400px) {
   .mob-menu {
     width: 359px;
+    padding-left: 61px;
   }
 }
 @media screen and (min-width: 768px) {

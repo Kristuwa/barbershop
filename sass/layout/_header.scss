@@ -127,13 +127,14 @@
   background-color: transparent;
   border: transparent;
   display: block;
-  margin-left: auto;
+  //   margin-left: auto;
 
   @include tablet {
     display: none;
   }
 }
 
+.menu-open-btn,
 .menu-close-btn {
   position: absolute;
   top: 48px;
@@ -146,11 +147,11 @@
   right: 0;
   z-index: 1;
   background-color: #ffffff;
-  width: 320px;
+  width: 100wh;
   height: 100vh;
   padding-top: 118px;
   padding-bottom: 48px;
-  padding-left: 61px;
+  padding-left: 31px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -158,6 +159,7 @@
 
   @media screen and (min-width: 400px) {
     width: 359px;
+    padding-left: 61px;
   }
 
   @include tablet {
