@@ -70,7 +70,6 @@ body {
 .container {
   width: 100%;
   min-width: 320px;
-  width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -677,12 +676,12 @@ body {
 }
 
 .hero .container {
-  display: flex;
   padding: 0;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero .container {
+    display: flex;
     width: 720px;
     padding-left: 15px;
     padding-right: 15px;
@@ -818,11 +817,9 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .about {
-    padding-top: 84px;
-    padding-bottom: 84px;
-  }
+.about {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 @media screen and (min-width: 768px) {
   .about {
