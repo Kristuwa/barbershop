@@ -151,11 +151,11 @@
 // 	margin-right: 5px;
 // 	transition: background-color 300ms linear;
 //  }
- 
+
 //  .modal-check:checked + .check-text::before {
 // 	background-color: #c4eecd;
 //  }
- 
+
 //  .check-text::after {
 // 	content: "";
 // 	position: absolute;
@@ -168,7 +168,7 @@
 // 	transform: rotate(-45deg);
 // 	transition: transform 300ms linear, background-color 300ms linear;
 //  }
- 
+
 //  .modal-check:checked + .check-text::after {
 // 	transform: rotate(45deg);
 // 	background-color: #ffffff;
@@ -186,7 +186,7 @@
 // 	margin-right: 5px;
 // 	transition: background-color 300ms linear;
 //  }
- 
+
 //  .check-text::after {
 // 	content: "";
 // 	position: absolute;
@@ -197,13 +197,13 @@
 // 	left: 3px;
 // 	transition: transform 300ms linear, background-color 300ms linear;
 //  }
- 
+
 //  .modal-check:checked + .check-text::after {
 // 	transform: translate(16px);
 // 	background-color: #ffffff;
 // 	border: 1px solid #999999;
 //  }
- 
+
 //  .modal-check:checked + .check-text::before {
 // 	background-color: #c4eecd;
 //  } */
@@ -220,11 +220,11 @@
 // 	align-items: center;
 // 	justify-content: center;
 //  }
- 
+
 //  .check-icon {
 // 	fill: transparent;
 //  }
- 
+
 //  .modal-check:checked + .check-text span {
 // 	background-color: var(--accent-color);
 // 	border: none;
